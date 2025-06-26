@@ -30,16 +30,19 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    
 2. Descripción de las configuraciones home1 y home2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?, justifique su respuesta.
   ### Home 1
+  La posición Home 1 es cuando el robot está con el brazo recogido y ocupa menos espacio, como se puede apreciar en la siguiente imagen
   ![image](https://github.com/user-attachments/assets/3b2a775c-56c8-4bf8-8702-ed39f4814645)
+  A continuación se muestra la posición de cada articulación en la posición Home 1
   ![image](https://github.com/user-attachments/assets/16d9e717-3729-4cb7-9a2a-789202762118)
 
   ### Home 2
+  La posición Home 2 es cuando el robot está con el brazo extendido verticalmente y se puede apreciar con mayor claridad el efector final
   ![image](https://github.com/user-attachments/assets/24638a88-d767-4977-afdb-4f538258bf43)
+  A continuación se muestra la posición de cada articulación en la posición Home 2
   ![image](https://github.com/user-attachments/assets/b40fc08d-6595-4c44-8ecd-08b1dba2fc5b)
 
   Al comparar las dos posiciones de Home del robot Motoman MH6, la mejor opción dependerá del propósito específico de dicha posición. La posición Home 2, con el brazo extendido hacia arriba, es ideal cuando se requiere iniciar trayectorias con un área de trabajo despejada, ya que ofrece mayor visibilidad del efector final y reduce el riesgo de colisión al comienzo de la operación. Por otro lado, la posición Home 1, con el brazo recogido y más compacto, es más adecuada como posición de reposo o espera, ya que ocupa menos espacio, protege mejor los cables y componentes, y es más segura durante tareas de mantenimiento o al encender/apagar el robot. Por lo tanto, si el objetivo es seguridad y compacidad, se recomienda la segunda posición; si se busca una postura inicial eficiente para iniciar movimientos, la primera resulta más conveniente.
 
-  
 3. Procedimiento detallado para realizar movimientos manuales, especificando cómo cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
    
    En un principio se debe asegurar que el robot se encuentra en modo manual (Teach Mode) girando la llave de modo a la posición “TEACH” confirmando que el robot no está en modo remoto (REMOTE OFF).
@@ -81,8 +84,9 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
    
 5. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
-6. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
-7. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
-8. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
-9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+   
+7. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
+8. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
+9. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+10. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
