@@ -41,9 +41,22 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
   
 3. Procedimiento detallado para realizar movimientos manuales, especificando cómo cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
-4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
-5. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
-6. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
-7. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
-8. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+   
+   En un principio se debe asegurar que el robot se encuentra en modo manual (Teach Mode) girando la llave de modo a la posición “TEACH” confirmando que el robot no está en modo remoto (REMOTE OFF).
+   Luego mantener presionado el botón de seguridad ubicado en la parte posterior del teach pendant (conocido como deadman switch) para habilitar el movimiento manual.
+
+   ![image](https://github.com/user-attachments/assets/47c79ba7-4a51-49ac-8bca-000445df0322)
+
+   El teach pendant permite controlar el robot en diferentes modos, como articulaciones, coordenadas cartesianas, coordenadas cilíndricas, coordenadas de la herramienta y coordenadas del usuario. Como modos principales se describe el        modo articulaciones y cartesiano:
+   
+   ### Modo Articulaciones
+   En este modo, se permite el movimiento individual de cada uno de los seis ejes del robot (J1 a J6). Para activarlo se presiona el botón "COORD" en el teach pendant luego se selecciona la opción "Joint" y  aparecerán en la pantalla las    etiquetas J1 a J6, indicando el control por eje:
+
+   ![image](https://github.com/user-attachments/assets/abd8ab4e-d2d5-4f67-b864-9fb5c6556a48)
+
+5. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
+6. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
+7. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
+8. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
