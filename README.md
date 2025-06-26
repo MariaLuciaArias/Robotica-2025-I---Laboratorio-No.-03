@@ -15,7 +15,7 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    | Carga máxima  | 6 kg     | 6 kg    |
    | Alcance     | 810 mm   | 1422 mm    |
    | Número grados de libertad | 6 | 6 expandible a 8 |
-   | Velocidad |      |        |
+   | Velocidad |    Eje 1: 200 ° / s ; Eje 2: 200 ° / s Eje 3: 260 ° / s ; Eje 4: 360 ° / s ; Eje 5: 360 ° / s ; Eje 6: 450 ° / s  |  J1 220 °/s (3.84 rad/s) J2 00 °/s (3.49 rad/s) J3 220 °/s (3.84 rad/s) J4 410 °/s (7.16 rad/s) J5 410 °/s (7.16 rad/s) J6 610 °/s (10.65 rad/s) |
    | Repetibilidad  | 0.03 mm| 0.08 mm |
    | Peso del robot	 | 98 kg| 	130 kg|
    | Interfaz de programación  | RAPID | 	INFORM II | 	
