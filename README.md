@@ -116,6 +116,7 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    | :---         |     :---:      |          :---: |
    | Marcas compatibles  |  Multimarca: ABB, Yaskawa (Motoman), KUKA, FANUC, UR, Staubli, entre otras  | Exclusiva para robots ABB |
    | Postprocesadores  | Dispone de decenas de postprocesadores para generar código nativo de distintas marcas  | Solo genera código RAPID (ABB)  |
+   
    RoboDK es ideal para entornos mixtos o donde se utilicen robots de diferentes fabricantes, en cambio, RobotStudio solo es aplicable a celdas ABB.
 
    #### Programación offline y generación de código
@@ -124,8 +125,16 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    | Lenguaje de programación | Genera código en lenguaje nativo del fabricante  | Genera código en lenguaje RAPID (ABB) |
    | Flexibilidad para procesos | Alto: permite crear scripts en Python, integración con CAM  | Muy detallado en lógica de automatización, pero limitado a RAPID  |
 
+   RoboDK posee mayor flexibilidad con scripting y generación multiformato y RobotStudio un entorno potente de RAPID con funciones de debugging, breakpoint y simulación lógica.
+
    #### Comunicación con el robot físico
+   | Característica | RoboDK | RobotStudio|
+   | :---         |     :---:      |          :---: |
+   | Transferencia de programas  | Vía USB, FTP o en línea (si se habilita) | Comunicación directa con robots ABB, incluso en tiempo real |
+   | Control en línea | Limitado, depende del robot y configuración | Muy fluido con ABB; puede simular PLCs y E/S |
+
+   RobotStudio ofrece simulación y conexión total con los robots ABB, sin embargo, RoboDK tiene un control en línea más limitado y dependiente de marca/configuración.
    
-8. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
-9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+7. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+8. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
