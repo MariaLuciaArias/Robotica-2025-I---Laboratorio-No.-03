@@ -37,6 +37,8 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
   ![image](https://github.com/user-attachments/assets/24638a88-d767-4977-afdb-4f538258bf43)
   ![image](https://github.com/user-attachments/assets/b40fc08d-6595-4c44-8ecd-08b1dba2fc5b)
 
+  Al comparar las dos posiciones de Home del robot Motoman MH6, la mejor opción dependerá del propósito específico de dicha posición. La posición Home 2, con el brazo extendido hacia arriba, es ideal cuando se requiere iniciar trayectorias con un área de trabajo despejada, ya que ofrece mayor visibilidad del efector final y reduce el riesgo de colisión al comienzo de la operación. Por otro lado, la posición Home 1, con el brazo recogido y más compacto, es más adecuada como posición de reposo o espera, ya que ocupa menos espacio, protege mejor los cables y componentes, y es más segura durante tareas de mantenimiento o al encender/apagar el robot. Por lo tanto, si el objetivo es seguridad y compacidad, se recomienda la segunda posición; si se busca una postura inicial eficiente para iniciar movimientos, la primera resulta más conveniente.
+
   
 3. Procedimiento detallado para realizar movimientos manuales, especificando cómo cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
 4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
