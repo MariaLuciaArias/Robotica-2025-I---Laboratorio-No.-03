@@ -83,10 +83,33 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
 
    
-5. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
-   
-7. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
-8. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
-9. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
-10. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot. 
+
+
+5. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
+
+   #### Funcionalidades principales de RoboDK
+   - **Simulación 3D de celdas robóticas**: Permite crear entornos virtuales donde se simulan robots,             piezas, herramientas, transportadores, sensores y otros elementos industriales.
+   - **Programación offline**: Es posible programar trayectorias, ciclos de trabajo o rutinas completas sin       detener la producción, ni tener el robot presente
+   - **Generación automática de código para múltiples marcas**: RoboDK incluye postprocesadores para marcas       como Yaskawa, ABB, KUKA, FANUC, UR, etc., generando archivos de código nativo directamente                  compatibles con el controlador del robot.
+   - **Cinemática inversa y planeación de trayectorias**: RoboDK calcula automáticamente las posiciones           articulares necesarias para seguir trayectorias definidas en el espacio cartesiano, evitando                colisiones y respetando los límites del robot.
+   - **Interfaz para calibración de herramientas y bases**: Incluye asistentes para calibrar herramientas         (TCP) y sistemas de coordenadas (referencias), lo que mejora la precisión del robot en tareas reales.
+   #### Comunicación con el manipulador
+   En el caso específico de manipuladores Motoman (Yaskawa), RoboDK se comunica mediante la generación de      código en el lenguaje nativo del controlador, como JBI para DX100/DX200 o SRC para YRC1000. Esta            comunicación puede realizarse de dos maneras:
+   - Exportando el programa generado en RoboDK a un archivo JBI/SRC e importándolo manualmente al                controlador
+   - Usando una conexión directa a través de Ethernet/IP, FTP o sockets TCP/IP, lo cual permite transferir       programas automáticamente o incluso controlar el robot en tiempo real en algunos casos avanzados. Para      esto es necesario colocar el robot en modo remoto ("REMOTE") y en el software RoboDK seleccionar la         opción Conectar > Conectar al robot, luego se introduce la IP del robot y por último se selecciona la       opción Conectar.
+     
+     ![image](https://github.com/user-attachments/assets/7c6468e8-4b58-4d0a-a64a-7b608ae9dc22)
+
+     #### Proceso para ejecutar movimientos:
+     1. **Creación de trayectoria**: Se define una serie de puntos cartesianos en el entorno 3D, ya sea             manualmente, mediante la importación desde un archivo CAD/CAM, o generando trayectorias con scripts         (por ejemplo, en Python).
+     2. **Resolución de la cinemática inversa**: RoboDK calcula la posición de cada articulación del robot          (ángulos de J1 a J6) necesaria para alcanzar cada punto cartesiano de la trayectoria.
+     3. **Planeación de movimiento y verificación de colisiones**: RoboDK genera la secuencia completa de           movimientos, asegurándose de evitar colisiones con el entorno o con el mismo robot, respetando los          límites de velocidad y aceleración establecidos.
+     4. **Generación de código nativo**: Una vez verificada la trayectoria, RoboDK utiliza un                       postprocesador específico para Yaskawa que traduce los movimientos en instrucciones JBI (o SRC) que         el controlador del robot puede ejecutar directamente.
+     5. **Transferencia del programa al robot**: El archivo generado puede copearse al controlador via USB          o FTP y se ejecuta desde el teach pendant, o tambíen se puede ejecutar via TCP/IP desde RoboDK
+     6. **Ejecución física**: Una vez cargado el código al robot, este ejecuta los movimientos siguiendo            exactamente lo programado en RoboDK. Gracias a la simulación previa y calibración de referencias,           se logra una correspondencia precisa entre el entorno virtual y el físico.
+
+6. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
+7. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+8. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
