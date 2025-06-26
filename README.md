@@ -54,6 +54,32 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
    ![image](https://github.com/user-attachments/assets/abd8ab4e-d2d5-4f67-b864-9fb5c6556a48)
 
+   ### Modo Cartesiano
+   Este modo permite el movimiento del efector final del robot en el espacio tridimensional, utilizando un sistema de coordenadas cartesiano. Para activarlo se presiona el botón "COORD" y se selecciona la opción "XYZ", por último se         elige el sistema de referencia deseado:
+   - Base (WORLD): movimientos respecto al sistema fijo del robot.
+   - Tool (HERRAMIENTA): movimientos respecto al efector final.
+   
+   ![image](https://github.com/user-attachments/assets/5f7cb60c-061f-467f-b584-4cc1026ac72c)
+
+   #### Traslaciones en los Ejes X, Y, Z
+   Con el modo cartesiano activado:
+   - Usar las teclas de dirección o funciones específicas del teach pendant para mover el robot en el eje deseado (X, Y o Z).
+   - Mantener presionado el botón de seguridad durante el movimiento.
+   - El robot se desplazará linealmente según la dirección y eje seleccionados.
+  
+   ![image](https://github.com/user-attachments/assets/ea3a70e6-640e-4fa1-8cee-d8421be0ac0f)
+
+   #### Rotaciones en los Ejes RX, RY, RZ
+   Para realizar rotaciones del efector final:
+   - Cambiar el modo a rotación cartesiana, generalmente identificado como RXYZ.
+   - Seleccionar el sistema de coordenadas (se recomienda TOOL para rotar alrededor del efector final).
+   - Utilizar los controles del teach pendant para aplicar rotación en los ejes RX, RY o RZ.
+   - Mantener presionado el botón de seguridad para ejecutar el movimiento.
+
+   ![image](https://github.com/user-attachments/assets/fd984270-8794-4ea6-b020-e05db08bd728)
+
+
+   
 5. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
 6. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
 7. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
