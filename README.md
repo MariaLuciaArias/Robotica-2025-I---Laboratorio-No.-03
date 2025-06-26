@@ -18,10 +18,11 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    | Velocidad |      |        |
    | Repetibilidad  | 0.03 mm| 0.08 mm |
    | Peso del robot	 | 98 kg| 	130 kg|
+   | Interfaz de programación  | RAPID | 	INFORM II | 	
    | Controlador  | IRC5 Compact | DX100 / DX200|
    | Aplicaciones típicas| Soldadura por arco, Mecanizado, manipulación de piezas, montaje de piezas  | Soldadura por arco, ensamblaje, dosificación, moldeo por inyección, alimentación de máquinas, manipulación de materiales, embalaje |
    
-2. Descripción de las configuraciones home1 y home2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?, justifique su respuesta.
+3. Descripción de las configuraciones home1 y home2 del Motoman MH6, indicando la posición de cada articulación, ¿Cual posición es mejor?, justifique su respuesta.
    Ahora, se requiere 
 4. Procedimiento detallado para realizar movimientos manuales, especificando cómo cambiar entre modos de operación (articulaciones, cartesiano) y realizar traslaciones y rotaciones en los ejes X, Y, Z.
 5. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
