@@ -12,6 +12,7 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 1. Cuadro comparativo detallado de las características técnicas del Motoman MH6 y el IRB140, incluyendo carga maxima, alcance, número de grados de libertad, velocidad, aplicaciones típicas, etc.
    | Característica | IRB140 | Motoman MH6 |
    | :---         |     :---:      |          :---: |
+   | Fabricante  | ABB Robotics   | Yaskawa Motoman   |
    | Carga máxima  | 6 kg     | 6 kg    |
    | Alcance     | 810 mm   | 1422 mm    |
    | Número grados de libertad | 6 | 6 expandible a 8 |
