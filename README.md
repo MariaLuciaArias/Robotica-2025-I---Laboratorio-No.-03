@@ -110,6 +110,16 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    6. **Ejecución física**: Una vez cargado el código al robot, este ejecuta los movimientos siguiendo exactamente lo programado en RoboDK. Gracias a la simulación previa y calibración de referencias, se logra una correspondencia              precisa entre el entorno virtual y el físico.
 
 6. Análisis comparativo entre RoboDK y RobotStudio, destacando ventajas, limitaciones y aplicaciones de cada herramienta.
-7. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
-8. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+   | Característica | RoboDK | RobotStudio|
+   | :---         |     :---:      |          :---: |
+   | Marcas compatibles  |  Multimarca: ABB, Yaskawa (Motoman), KUKA, FANUC, UR, Staubli, entre otras  | Exclusiva para robots ABB |
+   | Postprocesadores  | Dispone de decenas de postprocesadores para generar código nativo de distintas marcas  | Solo genera código RAPID (ABB)  |
+
+   | Característica | RoboDK | RobotStudio|
+   | :---         |     :---:      |          :---: |
+   | Marcas compatibles  |  Multimarca: ABB, Yaskawa (Motoman), KUKA, FANUC, UR, Staubli, entre otras  | Exclusiva para robots ABB |
+   | Postprocesadores  | Dispone de decenas de postprocesadores para generar código nativo de distintas marcas  | Solo genera código RAPID (ABB)  |
+   
+8. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
