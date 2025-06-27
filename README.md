@@ -80,8 +80,9 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
 
    
-4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot. 
-   Hay cuatro niveles de velocidad:  lento, medio, rápido, y avanzar poco a poco (inching).
+4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
+   
+   Hay cuatro niveles de velocidad: lento, medio, rápido, y avanzar poco a poco (inching).
 
 5. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
 
