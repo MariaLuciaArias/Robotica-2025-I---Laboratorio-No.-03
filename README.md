@@ -140,7 +140,7 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
 
    ![image](https://github.com/user-attachments/assets/37c7fb38-03cb-4709-9306-eb812af1a57c)
 
-   Por último el código python para la ejecución de las trayectorias además de el archivo .rdk se encuentran en el directorio 
+   Por último el código python para la ejecución de las trayectorias además de el archivo .rdk se encuentran en el directorio <a href="MH6">MH6</a>
 
 9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
