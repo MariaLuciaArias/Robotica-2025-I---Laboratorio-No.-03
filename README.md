@@ -136,11 +136,12 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    RobotStudio ofrece simulación y conexión total con los robots ABB, sin embargo, RoboDK tiene un control en línea más limitado y dependiente de marca/configuración.
    
 7. Código desarrollado en RoboDK para ejecutar una trayectoria polar, adjuntado como anexo dentro del repositorio.
+   
    La trayectoria polar programada para el laboratorio se muestra a continuación, junto con la ecuación que la describe y la simulación realizada en RoboDK.
 
    ![image](https://github.com/user-attachments/assets/37c7fb38-03cb-4709-9306-eb812af1a57c)
 
    Por último el código python para la ejecución de las trayectorias además de el archivo .rdk se encuentran en el directorio <a href="MH6">MH6</a>
 
-9. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
+8. Video de simulación en RoboDK mostrando la trayectoria polar y evidencia de su implementación en el manipulador Motoman de forma física, controlado desde el PC.
    A continuación se presenta el video del desarrollo de este laboratorio. <a href="">Video del desarrollo</a>
