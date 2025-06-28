@@ -82,7 +82,16 @@ Andrés Felipe Quenan Pozo - `aquenan@unal.edu.co`
    
 4. Explicación completa sobre los niveles de velocidad para movimientos manuales, el proceso para cambiar entre niveles y cómo identificar el nivel establecido en la interfaz del robot.
    
-   Hay cuatro niveles de velocidad: lento, medio, rápido, y avanzar poco a poco (inching).
+Los movimientos manuales (modo JOG) pueden realizarse en cuatro niveles de velocidad: INCH (a pasos pequeños), SLOW (lento), MED (medio) y FAST (rápido),cCada nivel corresponde a un valor porcentual de la velocidad máxima, configurable mediante parámetros del sistema (S1CxG045 a S1CxG048). Estas velocidades determinan qué tan rápido se moverá el manipulador al operar manualmente. Para cambiar entre niveles de velocidad, se utilizan los botones [FAST] y [SLOW] de la consola de programación, esta velocidad es válida también para las operaciones con [FWD] y [BWD]. Al presionar repetidamente [FAST], la velocidad cambia en el siguiente orden: INCH → SLOW → MED → FAST, mientras que al presionar [SLOW] la secuencia es inversa: FAST → MED → SLOW → INCH. Además, existe una opción de HIGH SPEED, que permite ejecutar movimientos a una velocidad preconfigurada aún más alta al mantener presionado el botón [HIGH SPEED] junto con una tecla de eje. Los botones mencionados anteriormente se encuentran señalados en el recuadro rojo de la siguiente imagen. Cabe resaltar que, al accionar el manipulador manualmente mediante la consola de programación, la velocidad máxima del punto central está limitada a 250 mm/s. 
+
+![Manipulador](https://github.com/user-attachments/assets/78c0de8b-f3a1-4f5e-be69-5e82a67d6277)
+
+Para identificar el nivel de velocidad actual, se puede observar la zona de estado (Status Display Area) en la parte superior de la consola de programación, donde se muestra el valor activo con íconos específicos para cada nivel (INCH, LOW, MEDIUM, HIGH). 
+![image](https://github.com/user-attachments/assets/137c391d-24a4-42f8-b5d2-e1962dbabc50)
+
+A continuación se muestra la parte de "status display" y se resalta la ubicacion donde se muestra la velocidad actual. 
+
+![image](https://github.com/user-attachments/assets/d0740cd9-3ccd-4d84-8ed7-2b6c1466835c)
 
 5. Descripción de las principales funcionalidades de RoboDK, explicando cómo se comunica con el manipulador Motoman y qué procesos realiza para ejecutar movimientos.
 
