@@ -87,6 +87,7 @@ Los movimientos manuales (modo JOG) pueden realizarse en cuatro niveles de veloc
 ![Manipulador](https://github.com/user-attachments/assets/78c0de8b-f3a1-4f5e-be69-5e82a67d6277)
 
 Para identificar el nivel de velocidad actual, se puede observar la zona de estado (Status Display Area) en la parte superior de la consola de programación, donde se muestra el valor activo con íconos específicos para cada nivel (INCH, LOW, MEDIUM, HIGH). 
+
 ![image](https://github.com/user-attachments/assets/137c391d-24a4-42f8-b5d2-e1962dbabc50)
 
 A continuación se muestra la parte de "status display" y se resalta la ubicacion donde se muestra la velocidad actual. 
